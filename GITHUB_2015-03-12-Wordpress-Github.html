@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+
+
+<!--- Für Textboxen und Bildeinfügungen:--->
+<style type="text/css">
+.textbox {
+	border:#000000 1px solid;
+	padding:1px;
+	background:#EEEEEE;
+	border-radius:5px;
+	white-space:nowrap;
+}
+.headerbox {
+	border:#000000 1px solid;
+	padding:1px;
+	background:#EEEEEE;
+	border-radius:0px;
+	display:block;
+	width:200px;
+	white-space:nowrap;
+}
+.smallpic_l {
+	float:left;
+       	margin:1% 1% 1% 1%;
+       	width:35%;
+}
+.smallpic_r {
+	float:right;
+       	margin:1% 1% 1% 1%;
+       	width:35%;
+}
+</style>
+
+<!--link rel="stylesheet" href="http://cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css" /-->
+<link rel="stylesheet" href="./js+css/fancyapps-fancyBox-18d1712/source/jquery.fancybox.css " media="screen"/>
+
+<!--link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'-->
+<!--link rel="stylesheet" href="https://stackedit.io/res-min/themes/base.css" /-->
+<link rel="stylesheet" href="./js+css/base.css" />
+<!--script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script-->
+<link href="./js+css/google-code-prettify/prettify.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="./js+css/google-code-prettify/prettify.js"></script>
+<style>
+    .prettyprint ol.linenums > li { list-style-type: decimal; }
+</style>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<!--script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script-->
+<script type="text/javascript" src="./js+css/MathJax-2.4-latest/MathJax.js?config=TeX-AMS_HTML"></script>
+
+<!--script src="https://code.jquery.com/jquery-2.1.3.min.js"></script-->
+<script src="./js+css/jquery-2.1.3.min.js"></script>
+<!--script src="http://cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.js"></script-->
+<script src="./js+css/fancyapps-fancyBox-18d1712/source/jquery.fancybox.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+</script>
+
+
+</head>
+<body onload="prettyPrint(); iframeResizePipe();"><div class="container; text-left" style="margin-left:0%; width:95%;">
+
+<iframe id="helpframe" src='' height='0' width='0' frameborder='0'></iframe>
+
+<script type="text/javascript">
+  function iframeResizePipe()
+  {
+     // What's the page height?
+     var height = document.body.scrollHeight;
+
+     // Going to 'pipe' the data to the parent through the helpframe..
+     var pipe = document.getElementById('helpframe');
+
+     // Cachebuster a precaution here to stop browser caching interfering
+     pipe.src = 'http://cyberleaf.bplaced.net/wp-content/uploads/2015/03/helper.html?height='+height+'&cacheb='+Math.random();
+
+  }
+</script>
+
+
+
+<!---
+Fett: \*\*(.+?)\*\*
+Fett: \_\_(.+?)\_\_
+Kursiv: \*(.+?)\*
+Kursiv: \_(.+?)\_
+Fett und Kursiv: \*\*\*(.+?)\*\*\*
+Fett und Kursiv: \_\_\_(.+?)\_\_\_
+Zeile soll umgebrochen werden: 
+Referenz: \[(.+?)\]\[(\d+?)\]
+Überschriften: (#{1,4}) *?(.+)$  optionen: m,g
+ungeordne Listeneintrag: ^[-|\*](.+?)$ optionen: m,g
+geordnete Listeneintrag: ^(\d+.)(.+?)$ optionen: m,g
+Zeilenumruch soll eingefügt werden: {2,}$ optionen: m,g
+Absätze: ^(.+?)$ optionen: m,g
+--->
+
+
+<h2 id="wordpress-vs-jekyll-etc"><strong>Wordpress vs. Jekyll etc.</strong></h2>
+
+<p>Zur Verwaltung der Inhalte einer Website ist <strong>Wordpress</strong> wohl eines der am häufigsten eingesetzten Software-Tools, insbesondere bei der Erstellung und Pflege eines Blogs. Der große Vorteil liegt zweifellos darin, dass man Inhalte einstellen kann, ohne sich mit dem Layout der Seite beschäftigen zu müssen. Durch die Wahl eines Themes ist das Aussehen im wesentlichen vorgegeben und der Autor kann sich ganz dem Inhalt widmen. Die Hürde im Netz zu publizieren, ist dadurch für weniger technikaffine Menschen stark herabgesetzt, diese sind dank solcher Tools wie <strong>Wordpress</strong> in der Lage ihre Inhalte einer breiten Öffentlichkeit in ansprechender Form zugänglich zu machen, zweifellos in vielen Fällen eine Bereicherung der Netzkultur. Dennoch hat Wordpress auch einige Schwäche. So reicht ein einfacher Webserver für das Betreiben eines Wordpress-Blogs nicht aus, es muss die Kombination aus Apache-Server, MySQL-Datenbanksystem und PHP (zusammen mit einem Linux-Betriebssystem auch als LAMP bezeichnet) vom Hoster angeboten werden. PHP und MySQL sorgen jedoch für eine hohe Serverlast bei starkem Traffic, muss doch jede Seite für jeden Aufruf erneut von PHP generiert werden. Weiterhin ist die Installation von Wordpress zwar einfach, aber das Update auf eine neue WP-Version bei bereits bestehendem Blog kann seine Tücken haben. Deshalb scheuen viele Anwender diesen Schritt, was wiederum ein Sicherheitsrisiko darstellt. </p>
+
+<p><!-- EndOf: Wordpress vs. Jekyll etc. --></p>
+
+
+
+</div>
+</html>
+
